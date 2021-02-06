@@ -45,6 +45,7 @@ public class MachineSqlDAO implements MachineDAO {
 		machine.setMoldHeightMax(rs.getInt("mold_height_max"));
 		machine.setShotSizePe(rs.getInt("shot_size_pe"));
 		machine.setShotSizePs(rs.getInt("shot_size_ps"));
+		
 		machine.setDateAdded(rs.getString("date_added"));
 		
 		return machine;
