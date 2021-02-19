@@ -2,8 +2,8 @@
 <div id="body">
   <div id="login" class="text-center">
     <form class="form-signin" @submit.prevent="login">
-      <h1>The Layover</h1>
-      <h3 class="tag">Explore Our List of Must-See Sights for Your Next Layover City!</h3>
+      <h1>Midwest Molding</h1>
+      <h3 class="tag">Midwest Is The Mo Fuckin Best</h3>
       <h4 class="h3 mb-3 font-weight-normal">Please Sign In</h4>
       <div
         class="alert alert-danger"

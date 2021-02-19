@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.brandonendevs.dao.MachineDAO;
 import com.brandonendevs.dao.UserDAO;
-import com.brandonendevs.model.Landmark;
 import com.brandonendevs.model.Machine;
 
 import java.security.Principal;
