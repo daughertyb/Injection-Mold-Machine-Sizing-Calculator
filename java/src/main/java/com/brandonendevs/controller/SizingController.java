@@ -24,13 +24,13 @@ public class SizingController {
 	@Autowired
 	MachineDAO dao;
 	
-//	@RequestMapping(path = "/machines-min", method = RequestMethod.GET)
-//	public List<Machine> getMinMachines() {
-//
-//		List<Machine> minMachines = dao.getMinMachines();
-//		return minMachines;
-//
-//	}
+	@RequestMapping(path = "/machines-min", method = RequestMethod.GET)
+	public List<Machine> getMinMachines() {
+
+		List<Machine> minMachines = dao.getMinMachines();
+		return minMachines;
+
+	}
 	
 	}
 	

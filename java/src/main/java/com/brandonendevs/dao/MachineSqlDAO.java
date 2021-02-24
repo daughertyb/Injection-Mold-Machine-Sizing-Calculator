@@ -30,6 +30,11 @@ public class MachineSqlDAO implements MachineDAO {
 
 		return machines;
 	}
+	
+	public List<Machine> getMinMachines() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	private Machine mapRowToMachine(SqlRowSet rs) {
 		Machine machine = new Machine();
@@ -50,4 +55,6 @@ public class MachineSqlDAO implements MachineDAO {
 		
 		return machine;
 	}
+
+	
 }
