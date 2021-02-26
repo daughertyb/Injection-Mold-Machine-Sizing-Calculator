@@ -8,4 +8,6 @@ public interface MachineDAO {
 
 	List<Machine> listAllMachines();
 
+	List<Machine> getMinMachines();
+
 }

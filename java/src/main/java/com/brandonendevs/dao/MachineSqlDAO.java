@@ -32,7 +32,7 @@ public class MachineSqlDAO implements MachineDAO {
 	}
 	
 	public List<Machine> getMinMachines() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
