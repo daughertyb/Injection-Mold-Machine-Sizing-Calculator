@@ -7,6 +7,8 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.brandonendevs.dao.MachineDAO;
@@ -26,9 +28,10 @@ public class SizingController {
 	
 	
 	@RequestMapping(path = "/machines-min", method = RequestMethod.GET)
-	public List<Machine> getMinMachines() {
-
-		List<Machine> minMachines = dao.getMinMachines(int width, int height, int stack, int shotSize);
+	public List<Machine> getMinMachines(@RequestParam int width, @RequestParam int height, @RequestParam int stack, @RequestParam int shotSize) {
+		
+		
+		List<Machine> minMachines = dao.getMinMachines(width, height, stack, shotSize);
 		return minMachines;
 
 	}
