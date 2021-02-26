@@ -24,10 +24,11 @@ public class SizingController {
 	@Autowired
 	MachineDAO dao;
 	
+	
 	@RequestMapping(path = "/machines-min", method = RequestMethod.GET)
 	public List<Machine> getMinMachines() {
 
-		List<Machine> minMachines = dao.getMinMachines();
+		List<Machine> minMachines = dao.getMinMachines(int width, int height, int stack, int shotSize);
 		return minMachines;
 
 	}
