@@ -31,7 +31,7 @@ public class MachineSqlDAO implements MachineDAO {
 		return machines;
 	}
 	
-	public List<Machine> getMinMachines() {
+	public List<Machine> getMinMachines(int width, int height, int stack, int shotSize) {
 		
 		return null;
 	}
